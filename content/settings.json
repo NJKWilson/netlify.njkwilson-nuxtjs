@@ -1,0 +1,10 @@
+{
+  "title": "NuxtJs Notes",
+  "url": "noteknowyet.com",
+  "logo": {
+    "light": "/logo.png",
+    "dark": "/logo.png"
+  },
+  "github": "njkwilson/netlify.njkwilson-nuxtjs",
+  "twitter": "@njkwilson"
+}
