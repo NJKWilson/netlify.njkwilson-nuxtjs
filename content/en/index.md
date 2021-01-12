@@ -1,27 +1,52 @@
 ---
-title: Introduction
+title: Index
+version: 0.1
+badge: 'Version 0.1'
+createdAt: "2020-06-22"
+updatedAt: "2020-06-22" 
 description: ''
 position: 1
 category: ''
-features:
-  - Feature 1
-  - Feature 2
-  - Feature 3
 ---
 
-<img src="/preview.png" class="light-img" width="1280" height="640" alt=""/>
-<img src="/preview-dark.png" class="dark-img" width="1280" height="640" alt=""/>
+<badge> {{ document.updatedAt }} </badge>
 
-[Module]() for [NuxtJS](https://nuxtjs.org).
+{{ document.updatedAt }}
 
-<alert type="success">
+<pre> {{ document }} </pre>
 
-Your documentation has been created successfully!
+Check the [Nuxt.js documentation](https://nuxtjs.org/guides/configuration-glossary/configuration-modules) for more information about installing and using modules in Nuxt.js.
 
-</alert>
+## Installation
 
-## Features
+Add `@nuxtjs/xxx` dependency to your project:
 
-<list :items="features"></list>
+<code-group>
+  <code-block label="Yarn" active>
 
-<p class="flex items-center">Enjoy light and dark mode:&nbsp;<app-color-switcher class="inline-flex ml-2"></app-color-switcher></p>
+  ```bash
+  yarn add @nuxtjs/xxx
+  ```
+
+  </code-block>
+  <code-block label="NPM">
+
+  ```bash[nuxt.config.js]
+  npm install @nuxtjs/xxx
+  ```
+
+  </code-block>
+</code-group>
+
+Then, add `@nuxtjs/xxx` to the `modules` section of `nuxt.config.js`:
+
+```js[nuxt.config.js]
+{
+  modules: [
+    '@nuxtjs/xxx'
+  ],
+  xxx: {
+    // Options
+  }
+}
+```
