@@ -1,52 +1,44 @@
 ---
-title: Index
+title: Getting Started
 version: 0.1
 badge: 'Version 0.1'
 createdAt: "2020-06-22"
 updatedAt: "2020-06-22" 
 description: ''
 position: 1
-category: ''
+category: 'Introduction'
+techs: 
+  - Vue.Js
+  - Nuxt.Js
+  - Tailwind
 ---
 
-<badge> {{ document.updatedAt }} </badge>
+## Why are we here
 
-{{ document.updatedAt }}
+The purpose of this site is to document the process of generating static websites that can be deployed to a webserver in plain HTML/CSS/JS using Nuxt.Js as a Static Site Generator (SSG).
 
-<pre> {{ document }} </pre>
+I will also
+- Create styled reusable components and give instructions on how to incorperate them into a project.
+- Explain how to use Vue.Js Loops and Condition Statments
+- Explain how to do on page SEO
+- Explain Vuex Stores
 
-Check the [Nuxt.js documentation](https://nuxtjs.org/guides/configuration-glossary/configuration-modules) for more information about installing and using modules in Nuxt.js.
+## What we will use
 
-## Installation
+<list :items="techs"></list>
 
-Add `@nuxtjs/xxx` dependency to your project:
+## What is an SSG
 
-<code-group>
-  <code-block label="Yarn" active>
+A static site generator (SSG) is a tool that can be used to create websites without having to hand-code each individual page in HTML. 
 
-  ```bash
-  yarn add @nuxtjs/xxx
-  ```
+A SSG can utilise templates so that Headers, Footers, Nav Bars, etc. can be written once and then reused on every page, you can also use raw data from sources such as markdown files or databases to create the actual content of a site page.
 
-  </code-block>
-  <code-block label="NPM">
+As an example you can create a websites template once (Headers, Footers, Nav Bars, etc) and leave a 'placeholder' so that when you generate your site the SSG will pull raw data from your datasource (Markdown/Database/Json) and generate a html page per Markdown document using your template but replacing the 'placeholder' with the content of the Markdown document.
 
-  ```bash[nuxt.config.js]
-  npm install @nuxtjs/xxx
-  ```
+Why is this good? Say you have 100 Blog Posts, if you hand code each page but then want to add a link to the footer you would have to manually change 100 pages with an SSG you would only have to change your template and regenerate the site.
 
-  </code-block>
-</code-group>
+## What is Nuxt.JS
 
-Then, add `@nuxtjs/xxx` to the `modules` section of `nuxt.config.js`:
+Nuxt.js is a framework that utilises Vue.js to create web applications, it can be used to create a Server Rendered Application, Single Page Application or a Static Generated Site.
 
-```js[nuxt.config.js]
-{
-  modules: [
-    '@nuxtjs/xxx'
-  ],
-  xxx: {
-    // Options
-  }
-}
-```
+This site will be focused on using the SSG functionality of Nuxt.Js but alot of this documenation can be used on all three options.

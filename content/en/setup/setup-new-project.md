@@ -1,7 +1,7 @@
 ---
-title: Setup
+title: Setup New Project
 description: ''
-position: 2
+position: 11
 category: Setup
 ---
 
